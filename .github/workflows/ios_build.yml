@@ -15,4 +15,4 @@ jobs:
 
     - name: Build iOS app
       run: |
-        xcodebuild -project "Frame Grabber.xcodeproj" -scheme "Frame Grabber Release" -sdk iphoneos -configuration Release
+        xcodebuild -project "Frame Grabber.xcodeproj" -scheme "Frame Grabber Release" -sdk iphoneos -configuration Release -allowProvisioningUpdates
