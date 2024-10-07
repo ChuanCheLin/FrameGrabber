@@ -13,10 +13,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: List Schemes
-      run: |
-        xcodebuild -list -project "Frame Grabber.xcodeproj"
-
     - name: Build iOS app
       run: |
-        xcodebuild -project "Frame Grabber.xcodeproj" -scheme FrameGrabber -sdk iphoneos -configuration Release
+        xcodebuild -project "Frame Grabber.xcodeproj" -scheme "Frame Grabber Release" -sdk iphoneos -configuration Release
